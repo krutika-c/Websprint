@@ -1,56 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebSprint - Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebSprint -Home</title>
+      <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-    <!-- Login/Signup Modal -->
-<div id="overlay" style="position:fixed; inset:0; background:rgba(0,0,0,0.5); display:flex; align-items:center; justify-content:center; z-index:999;">
-  <div style="background:white; padding:2rem; border-radius:12px; width:320px;">
-    
-    <!-- Tabs -->
-    <div style="display:flex; gap:8px; margin-bottom:1.5rem;">
-      <button onclick="showTab('login')" id="tab-login">Login</button>
-      <button onclick="showTab('signup')" id="tab-signup">Sign Up</button>
-    </div>
+  <h1>Choose an Option</h1>
 
-    <!-- Login Form -->
-    <div id="login-form">
-      <input type="email" placeholder="Email" /><br><br>
-      <input type="password" placeholder="Password" /><br><br>
-      <button onclick="closeModal()">Login</button>
-    </div>
+  <button onclick="window.location.href='test.html'">
+      Take Assessment Test
+  </button>
 
-    <!-- Signup Form -->
-    <div id="signup-form" style="display:none;">
-      <input type="text" placeholder="Name" /><br><br>
-      <input type="email" placeholder="Email" /><br><br>
-      <input type="password" placeholder="Password" /><br><br>
-      <button onclick="closeModal()">Sign Up</button>
-    </div>
-
-  </div>
-</div>
-
-<script>
-  function showTab(tab) {
-    document.getElementById('login-form').style.display = tab === 'login' ? 'block' : 'none';
-    document.getElementById('signup-form').style.display = tab === 'signup' ? 'block' : 'none';
-  }
-  function closeModal() {
-    document.getElementById('overlay').style.display = 'none';
-  }
-</script>	
-    <h1>Choose an Option</h1>
-
-    <button onclick="window.location.href='test.html'">
-         Take Assessment Test
-    </button>
-
-    <button onclick="window.location.href='topic.html'">
-        Start Learning
-    </button>
+  <button onclick="window.location.href='topic.html'">
+      Start Learning
+  </button>
 </body>
 </html>
